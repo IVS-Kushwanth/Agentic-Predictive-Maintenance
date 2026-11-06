@@ -1,0 +1,19 @@
+# ==============================================================================
+# Agentic Predictive Maintenance Framework — Streamlit Configuration
+# ==============================================================================
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 50
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#0066cc"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f6f9"
+textColor = "#1e293b"
+font = "sans serif"

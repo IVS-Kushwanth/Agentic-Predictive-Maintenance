@@ -1,0 +1,109 @@
+{
+  "config": {
+    "model_type": "EarlyWarning_LSTM",
+    "backbone": "lstm",
+    "input_dim": 153,
+    "hidden_dim": 32,
+    "num_layers": 1,
+    "dropout": 0.2,
+    "fc_dim": 24
+  },
+  "horizon": 30,
+  "train": {
+    "best_epoch": 3,
+    "best_val_loss": 0.1429,
+    "train_duration_sec": 17.13,
+    "history": {
+      "train_loss": [
+        0.5152,
+        0.1701,
+        0.1488,
+        0.1088,
+        0.1115,
+        0.0951,
+        0.0692
+      ],
+      "val_loss": [
+        0.2117,
+        0.1764,
+        0.1429,
+        0.1746,
+        0.1644,
+        0.1498,
+        0.1681
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001
+      ]
+    }
+  },
+  "optimal_threshold": 0.8638,
+  "val_metrics": {
+    "val_threshold": 0.8638,
+    "val_accuracy": 0.9725,
+    "val_precision": 0.9085,
+    "val_recall": 0.929,
+    "val_f1": 0.9187,
+    "val_pr_auc": 0.979,
+    "val_roc_auc": 0.9953,
+    "val_confusion_matrix": [
+      [
+        3033,
+        58
+      ],
+      [
+        44,
+        576
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.8638,
+    "test_accuracy": 0.9868,
+    "test_precision": 0.902,
+    "test_recall": 0.6657,
+    "test_f1": 0.766,
+    "test_pr_auc": 0.9025,
+    "test_roc_auc": 0.9958,
+    "test_confusion_matrix": [
+      [
+        9840,
+        24
+      ],
+      [
+        111,
+        221
+      ]
+    ]
+  },
+  "test_terminal_metrics": {
+    "test_terminal_threshold": 0.8638,
+    "test_terminal_accuracy": 0.93,
+    "test_terminal_precision": 0.9091,
+    "test_terminal_recall": 0.8,
+    "test_terminal_f1": 0.8511,
+    "test_terminal_pr_auc": 0.9632,
+    "test_terminal_roc_auc": 0.9888,
+    "test_terminal_confusion_matrix": [
+      [
+        73,
+        2
+      ],
+      [
+        5,
+        20
+      ]
+    ]
+  },
+  "size": {
+    "total_parameters": 24753,
+    "trainable_parameters": 24753,
+    "model_size_kb": 96.69
+  }
+}

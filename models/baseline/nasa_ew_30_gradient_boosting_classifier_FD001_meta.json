@@ -1,0 +1,46 @@
+{
+  "model_name": "Gradient Boosting Classifier",
+  "subset": "FD001",
+  "horizon": 30,
+  "target": "early_warning_30",
+  "optimal_threshold": 0.727454524452339,
+  "training_duration_seconds": 49.225,
+  "val_metrics": {
+    "val_threshold": 0.7275,
+    "val_accuracy": 0.9767,
+    "val_precision": 0.9276,
+    "val_recall": 0.9097,
+    "val_f1": 0.9186,
+    "val_pr_auc": 0.976,
+    "val_roc_auc": 0.9956,
+    "val_confusion_matrix": [
+      [
+        3627,
+        44
+      ],
+      [
+        56,
+        564
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.7275,
+    "test_accuracy": 0.9893,
+    "test_precision": 0.8934,
+    "test_recall": 0.6566,
+    "test_f1": 0.7569,
+    "test_pr_auc": 0.8969,
+    "test_roc_auc": 0.9969,
+    "test_confusion_matrix": [
+      [
+        12738,
+        26
+      ],
+      [
+        114,
+        218
+      ]
+    ]
+  }
+}

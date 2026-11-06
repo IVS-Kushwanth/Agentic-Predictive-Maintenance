@@ -1,0 +1,111 @@
+{
+  "config": {
+    "model_type": "AI4I_MLP",
+    "input_dim": 14,
+    "hidden_dims": [
+      64,
+      32,
+      16
+    ],
+    "dropout": 0.25
+  },
+  "train": {
+    "best_epoch": 8,
+    "best_val_loss": 0.5234,
+    "train_duration_sec": 8.46,
+    "history": {
+      "train_loss": [
+        1.0944,
+        0.8267,
+        0.7114,
+        0.6699,
+        0.6417,
+        0.6269,
+        0.6609,
+        0.5819,
+        0.5987,
+        0.563,
+        0.6265,
+        0.5231,
+        0.5524,
+        0.5317
+      ],
+      "val_loss": [
+        0.8667,
+        0.7207,
+        0.6359,
+        0.6129,
+        0.5989,
+        0.5818,
+        0.5712,
+        0.5234,
+        0.5461,
+        0.551,
+        0.5335,
+        0.5273,
+        0.524,
+        0.5376
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001,
+        0.001,
+        0.001
+      ]
+    }
+  },
+  "optimal_threshold": 0.8891,
+  "val_metrics": {
+    "val_threshold": 0.8891,
+    "val_accuracy": 0.9775,
+    "val_precision": 0.6667,
+    "val_recall": 0.6667,
+    "val_f1": 0.6667,
+    "val_pr_auc": 0.6945,
+    "val_roc_auc": 0.9543,
+    "val_confusion_matrix": [
+      [
+        1528,
+        18
+      ],
+      [
+        18,
+        36
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.8891,
+    "test_accuracy": 0.973,
+    "test_precision": 0.5897,
+    "test_recall": 0.6765,
+    "test_f1": 0.6301,
+    "test_pr_auc": 0.6437,
+    "test_roc_auc": 0.9658,
+    "test_confusion_matrix": [
+      [
+        1900,
+        32
+      ],
+      [
+        22,
+        46
+      ]
+    ]
+  },
+  "size": {
+    "total_parameters": 3809,
+    "trainable_parameters": 3809,
+    "model_size_kb": 15.78
+  }
+}

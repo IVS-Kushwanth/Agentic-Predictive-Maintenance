@@ -1,0 +1,118 @@
+{
+  "config": {
+    "model_type": "EarlyWarning_GRU",
+    "backbone": "gru",
+    "input_dim": 153,
+    "hidden_dim": 32,
+    "num_layers": 1,
+    "dropout": 0.2,
+    "fc_dim": 24
+  },
+  "horizon": 30,
+  "train": {
+    "best_epoch": 6,
+    "best_val_loss": 0.1226,
+    "train_duration_sec": 33.59,
+    "history": {
+      "train_loss": [
+        0.4451,
+        0.1953,
+        0.1638,
+        0.1506,
+        0.1256,
+        0.1076,
+        0.0896,
+        0.0856,
+        0.0719,
+        0.0532
+      ],
+      "val_loss": [
+        0.2135,
+        0.172,
+        0.1913,
+        0.1645,
+        0.1267,
+        0.1226,
+        0.1279,
+        0.1406,
+        0.1394,
+        0.1614
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001
+      ]
+    }
+  },
+  "optimal_threshold": 0.8702,
+  "val_metrics": {
+    "val_threshold": 0.8702,
+    "val_accuracy": 0.9755,
+    "val_precision": 0.9165,
+    "val_recall": 0.9387,
+    "val_f1": 0.9275,
+    "val_pr_auc": 0.9855,
+    "val_roc_auc": 0.9967,
+    "val_confusion_matrix": [
+      [
+        3038,
+        53
+      ],
+      [
+        38,
+        582
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.8702,
+    "test_accuracy": 0.9875,
+    "test_precision": 0.8782,
+    "test_recall": 0.7169,
+    "test_f1": 0.7894,
+    "test_pr_auc": 0.9079,
+    "test_roc_auc": 0.9962,
+    "test_confusion_matrix": [
+      [
+        9831,
+        33
+      ],
+      [
+        94,
+        238
+      ]
+    ]
+  },
+  "test_terminal_metrics": {
+    "test_terminal_threshold": 0.8702,
+    "test_terminal_accuracy": 0.96,
+    "test_terminal_precision": 0.9565,
+    "test_terminal_recall": 0.88,
+    "test_terminal_f1": 0.9167,
+    "test_terminal_pr_auc": 0.9923,
+    "test_terminal_roc_auc": 0.9973,
+    "test_terminal_confusion_matrix": [
+      [
+        74,
+        1
+      ],
+      [
+        3,
+        22
+      ]
+    ]
+  },
+  "size": {
+    "total_parameters": 18769,
+    "trainable_parameters": 18769,
+    "model_size_kb": 73.32
+  }
+}

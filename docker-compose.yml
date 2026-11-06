@@ -1,0 +1,71 @@
+# ==============================================================================
+# Agentic Predictive Maintenance Framework — Docker Compose Orchestration
+# ==============================================================================
+# Architecture:
+#   - Service 1: 'backend'  (FastAPI REST Microservice, Port 8000)
+#   - Service 2: 'frontend' (Streamlit Web Dashboard, Port 8501)
+#   - Storage:   'maintenance_data' (Named Persistent Volume for SQLite)
+#   - Network:   'pdm_network' (Internal Bridge Discovery Network)
+# ==============================================================================
+
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: backend
+    container_name: pdm_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - DATABASE_PATH=/app/data/maintenance_history.db
+      - CORS_ORIGINS=http://localhost:8501,http://127.0.0.1:8501,http://frontend:8501
+      - LOG_LEVEL=INFO
+    volumes:
+      - maintenance_data:/app/data
+    networks:
+      - pdm_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: frontend
+    container_name: pdm_frontend
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_PORT=8501
+      - BACKEND_API_URL=http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - pdm_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  maintenance_data:
+    name: pdm_maintenance_data
+    driver: local
+
+networks:
+  pdm_network:
+    name: pdm_internal_network
+    driver: bridge

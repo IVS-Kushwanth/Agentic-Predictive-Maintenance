@@ -1,0 +1,99 @@
+{
+  "config": {
+    "model_type": "GRU",
+    "input_dim": 216,
+    "hidden_dim": 32,
+    "num_layers": 1,
+    "dropout": 0.2,
+    "fc_dim": 32
+  },
+  "train": {
+    "best_epoch": 8,
+    "best_val_loss": 38.1752,
+    "train_duration_sec": 98.95,
+    "history": {
+      "train_loss": [
+        107.505,
+        79.1023,
+        65.022,
+        47.9804,
+        44.0126,
+        41.2159,
+        40.0214,
+        39.8046,
+        38.9128,
+        38.5065,
+        38.1825,
+        36.2592
+      ],
+      "val_loss": [
+        96.456,
+        71.8372,
+        57.482,
+        45.6673,
+        42.4575,
+        41.7526,
+        39.2799,
+        38.1752,
+        39.2216,
+        39.9223,
+        38.7185,
+        38.474
+      ],
+      "val_rmse": [
+        126.8045,
+        93.3104,
+        78.0989,
+        64.3066,
+        61.5187,
+        60.5903,
+        56.3,
+        54.8264,
+        56.5083,
+        58.72,
+        56.2962,
+        56.6714
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001
+      ]
+    }
+  },
+  "val_metrics": {
+    "val_mae": 38.9789,
+    "val_rmse": 55.4246,
+    "val_r2": 0.5854,
+    "val_med_ae": 25.9257,
+    "val_nasa_score": 1193154669.79
+  },
+  "test_terminal_metrics": {
+    "test_terminal_mae": 29.7637,
+    "test_terminal_rmse": 39.3063,
+    "test_terminal_r2": 0.4803,
+    "test_terminal_med_ae": 19.9724,
+    "test_terminal_nasa_score": 173447.5
+  },
+  "test_all_metrics": {
+    "test_all_mae": 56.8362,
+    "test_all_rmse": 77.8485,
+    "test_all_r2": 0.2367,
+    "test_all_med_ae": 42.3646,
+    "test_all_nasa_score": 4676608999569.28
+  },
+  "size": {
+    "total_parameters": 25089,
+    "trainable_parameters": 25089,
+    "model_size_kb": 98.0
+  }
+}

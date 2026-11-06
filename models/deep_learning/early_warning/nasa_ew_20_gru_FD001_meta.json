@@ -1,0 +1,130 @@
+{
+  "config": {
+    "model_type": "EarlyWarning_GRU",
+    "backbone": "gru",
+    "input_dim": 153,
+    "hidden_dim": 32,
+    "num_layers": 1,
+    "dropout": 0.2,
+    "fc_dim": 24
+  },
+  "horizon": 20,
+  "train": {
+    "best_epoch": 10,
+    "best_val_loss": 0.108,
+    "train_duration_sec": 45.09,
+    "history": {
+      "train_loss": [
+        0.4454,
+        0.1596,
+        0.1401,
+        0.1309,
+        0.1258,
+        0.116,
+        0.1102,
+        0.1012,
+        0.0949,
+        0.0942,
+        0.0872,
+        0.079,
+        0.073,
+        0.0609
+      ],
+      "val_loss": [
+        0.1672,
+        0.1448,
+        0.1342,
+        0.1429,
+        0.1212,
+        0.1211,
+        0.1298,
+        0.1319,
+        0.1202,
+        0.108,
+        0.126,
+        0.1401,
+        0.1755,
+        0.126
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001
+      ]
+    }
+  },
+  "optimal_threshold": 0.9362,
+  "val_metrics": {
+    "val_threshold": 0.9362,
+    "val_accuracy": 0.9801,
+    "val_precision": 0.9179,
+    "val_recall": 0.9048,
+    "val_f1": 0.9113,
+    "val_pr_auc": 0.9736,
+    "val_roc_auc": 0.9966,
+    "val_confusion_matrix": [
+      [
+        3257,
+        34
+      ],
+      [
+        40,
+        380
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.9362,
+    "test_accuracy": 0.995,
+    "test_precision": 0.8333,
+    "test_recall": 0.7317,
+    "test_f1": 0.7792,
+    "test_pr_auc": 0.832,
+    "test_roc_auc": 0.9975,
+    "test_confusion_matrix": [
+      [
+        10055,
+        18
+      ],
+      [
+        33,
+        90
+      ]
+    ]
+  },
+  "test_terminal_metrics": {
+    "test_terminal_threshold": 0.9362,
+    "test_terminal_accuracy": 0.95,
+    "test_terminal_precision": 0.9231,
+    "test_terminal_recall": 0.75,
+    "test_terminal_f1": 0.8276,
+    "test_terminal_pr_auc": 0.921,
+    "test_terminal_roc_auc": 0.9866,
+    "test_terminal_confusion_matrix": [
+      [
+        83,
+        1
+      ],
+      [
+        4,
+        12
+      ]
+    ]
+  },
+  "size": {
+    "total_parameters": 18769,
+    "trainable_parameters": 18769,
+    "model_size_kb": 73.32
+  }
+}

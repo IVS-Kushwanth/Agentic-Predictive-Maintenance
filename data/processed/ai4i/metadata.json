@@ -1,0 +1,50 @@
+{
+  "target": "Machine failure",
+  "input_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index",
+    "Type_L",
+    "Type_M"
+  ],
+  "numerical_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index"
+  ],
+  "categorical_features": [
+    "Type"
+  ],
+  "excluded_leakage_features": [
+    "UDI",
+    "Product ID",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "train_samples": 8000,
+  "test_samples": 2000,
+  "train_failure_count": 271,
+  "test_failure_count": 68
+}

@@ -1,0 +1,77 @@
+# ==============================================================================
+# Agentic Predictive Maintenance Framework — .gitignore
+# ==============================================================================
+
+# Python Bytecode & Optimization Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# IDE, Editor & OS Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# File Backups
+*.bak
+
+# SQLite Runtime Database Files & Logs
+*.db
+*.db-journal
+*.sqlite3
+data/maintenance_history.db
+*.log
+logs/
+
+# Raw Datasets & Heavy Training Sequence Archives (>100 MB GitHub limit)
+# Note: Lightweight validation files (sequences_w30_val.npz, val_tabular.csv, ai4i test data)
+# are explicitly preserved for runtime deployment.
+data/raw/
+data/processed/nasa/*/*train.npz
+data/processed/nasa/*/*test.npz
+data/processed/nasa/*/train_tabular.csv
+data/processed/nasa/*/test_tabular.csv
+data/processed/nasa/FD001/sequences_w60_*.npz
+data/processed/nasa/FD002/
+data/processed/nasa/FD003/
+data/processed/nasa/FD004/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*

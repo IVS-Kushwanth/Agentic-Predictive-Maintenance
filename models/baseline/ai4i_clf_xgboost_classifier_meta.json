@@ -1,0 +1,60 @@
+{
+  "model_name": "XGBoost Classifier",
+  "dataset": "UCI AI4I 2020",
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index",
+    "Type_L",
+    "Type_M"
+  ],
+  "optimal_threshold": 0.7968938946723938,
+  "training_duration_seconds": 0.164,
+  "val_metrics": {
+    "val_threshold": 0.7969,
+    "val_accuracy": 0.99,
+    "val_precision": 0.8958,
+    "val_recall": 0.7963,
+    "val_f1": 0.8431,
+    "val_pr_auc": 0.8385,
+    "val_roc_auc": 0.9743,
+    "val_confusion_matrix": [
+      [
+        1541,
+        5
+      ],
+      [
+        11,
+        43
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.7969,
+    "test_accuracy": 0.991,
+    "test_precision": 0.9032,
+    "test_recall": 0.8235,
+    "test_f1": 0.8615,
+    "test_pr_auc": 0.863,
+    "test_roc_auc": 0.9687,
+    "test_confusion_matrix": [
+      [
+        1926,
+        6
+      ],
+      [
+        12,
+        56
+      ]
+    ]
+  }
+}

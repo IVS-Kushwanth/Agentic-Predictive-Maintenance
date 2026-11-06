@@ -1,0 +1,46 @@
+{
+  "model_name": "Random Forest Classifier",
+  "subset": "FD001",
+  "horizon": 30,
+  "target": "early_warning_30",
+  "optimal_threshold": 0.6454443243998778,
+  "training_duration_seconds": 2.243,
+  "val_metrics": {
+    "val_threshold": 0.6454,
+    "val_accuracy": 0.9723,
+    "val_precision": 0.8896,
+    "val_recall": 0.9226,
+    "val_f1": 0.9058,
+    "val_pr_auc": 0.9728,
+    "val_roc_auc": 0.9949,
+    "val_confusion_matrix": [
+      [
+        3600,
+        71
+      ],
+      [
+        48,
+        572
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.6454,
+    "test_accuracy": 0.9898,
+    "test_precision": 0.8727,
+    "test_recall": 0.7018,
+    "test_f1": 0.778,
+    "test_pr_auc": 0.8958,
+    "test_roc_auc": 0.9971,
+    "test_confusion_matrix": [
+      [
+        12730,
+        34
+      ],
+      [
+        99,
+        233
+      ]
+    ]
+  }
+}

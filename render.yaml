@@ -1,0 +1,39 @@
+# ==============================================================================
+# Agentic Predictive Maintenance Framework — Render Blueprint Specification
+# ==============================================================================
+# Reference: https://render.com/docs/blueprint-spec
+# ==============================================================================
+
+services:
+  # ----------------------------------------------------------------------------
+  # FastAPI REST Backend Service
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: agentic-pdm-backend
+    runtime: python
+    region: oregon
+    plan: starter # Starter plan (1 GB RAM, 0.5 CPU) recommended for ML inference (Peak RAM: 420 MB)
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt
+    startCommand: uvicorn app.backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    disk:
+      name: maintenance-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DATABASE_PATH
+        value: /data/maintenance.db
+      - key: CORS_ORIGINS
+        value: https://share.streamlit.io,https://*.streamlit.app,http://localhost:8501,http://127.0.0.1:8501
+      - key: OPENAI_API_KEY
+        sync: false # Set securely in Render dashboard if LLM explanations are enabled
+      - key: ANTHROPIC_API_KEY
+        sync: false # Set securely in Render dashboard if Claude agent is enabled

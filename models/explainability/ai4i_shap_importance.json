@@ -1,0 +1,72 @@
+[
+    {
+        "feature": "Mechanical power [W]",
+        "mean_abs_shap": 0.914276,
+        "rank": 1
+    },
+    {
+        "feature": "Tool wear [min]",
+        "mean_abs_shap": 0.881663,
+        "rank": 2
+    },
+    {
+        "feature": "Rotational speed [rpm]",
+        "mean_abs_shap": 0.723444,
+        "rank": 3
+    },
+    {
+        "feature": "Overstrain indicator [Nm*min]",
+        "mean_abs_shap": 0.562924,
+        "rank": 4
+    },
+    {
+        "feature": "Torque to speed ratio",
+        "mean_abs_shap": 0.48256,
+        "rank": 5
+    },
+    {
+        "feature": "Heat dissipation index",
+        "mean_abs_shap": 0.419217,
+        "rank": 6
+    },
+    {
+        "feature": "Temp ratio",
+        "mean_abs_shap": 0.336036,
+        "rank": 7
+    },
+    {
+        "feature": "Torque [Nm]",
+        "mean_abs_shap": 0.318139,
+        "rank": 8
+    },
+    {
+        "feature": "Temp difference [K]",
+        "mean_abs_shap": 0.283544,
+        "rank": 9
+    },
+    {
+        "feature": "Power wear index",
+        "mean_abs_shap": 0.253024,
+        "rank": 10
+    },
+    {
+        "feature": "Air temperature [K]",
+        "mean_abs_shap": 0.221352,
+        "rank": 11
+    },
+    {
+        "feature": "Process temperature [K]",
+        "mean_abs_shap": 0.161308,
+        "rank": 12
+    },
+    {
+        "feature": "Type_L",
+        "mean_abs_shap": 0.092306,
+        "rank": 13
+    },
+    {
+        "feature": "Type_M",
+        "mean_abs_shap": 0.022252,
+        "rank": 14
+    }
+]

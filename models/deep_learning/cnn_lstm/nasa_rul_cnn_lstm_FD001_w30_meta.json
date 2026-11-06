@@ -1,0 +1,109 @@
+{
+  "config": {
+    "model_type": "CNN-LSTM",
+    "input_dim": 153,
+    "conv_filters": 32,
+    "kernel_size": 3,
+    "lstm_hidden_dim": 32,
+    "lstm_layers": 1,
+    "dropout": 0.2,
+    "fc_dim": 32
+  },
+  "train": {
+    "best_epoch": 9,
+    "best_val_loss": 21.8244,
+    "train_duration_sec": 25.43,
+    "history": {
+      "train_loss": [
+        86.7732,
+        67.6073,
+        40.4011,
+        23.7492,
+        20.3077,
+        18.6618,
+        17.6814,
+        16.9354,
+        16.1631,
+        15.6609,
+        15.1876,
+        14.4608,
+        13.9936,
+        13.552
+      ],
+      "val_loss": [
+        82.3454,
+        60.6521,
+        30.8986,
+        24.812,
+        22.2962,
+        22.2058,
+        22.5996,
+        23.3952,
+        21.8244,
+        34.9216,
+        21.9628,
+        24.0485,
+        22.4114,
+        22.6593
+      ],
+      "val_rmse": [
+        103.8341,
+        79.8691,
+        49.7809,
+        40.1995,
+        34.8918,
+        35.9069,
+        33.3972,
+        33.9081,
+        32.6019,
+        46.4259,
+        32.3149,
+        35.064,
+        33.0643,
+        33.8747
+      ],
+      "lr": [
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.002,
+        0.001,
+        0.001
+      ]
+    }
+  },
+  "val_metrics": {
+    "val_mae": 21.7542,
+    "val_rmse": 32.0227,
+    "val_r2": 0.7568,
+    "val_med_ae": 12.5795,
+    "val_nasa_score": 996606.18
+  },
+  "test_terminal_metrics": {
+    "test_terminal_mae": 19.983,
+    "test_terminal_rmse": 26.994,
+    "test_terminal_r2": 0.578,
+    "test_terminal_med_ae": 13.1407,
+    "test_terminal_nasa_score": 4301.67
+  },
+  "test_all_metrics": {
+    "test_all_mae": 28.8527,
+    "test_all_rmse": 38.8794,
+    "test_all_r2": 0.4927,
+    "test_all_med_ae": 21.4429,
+    "test_all_nasa_score": 5019751.94
+  },
+  "size": {
+    "total_parameters": 27425,
+    "trainable_parameters": 27425,
+    "model_size_kb": 107.39
+  }
+}

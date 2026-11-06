@@ -1,0 +1,95 @@
+# Configuration for Agentic Predictive Maintenance Framework
+# Phase 1: Data Acquisition, Validation, EDA, Cleaning, Feature Engineering & Sequence Generation
+
+project:
+  name: "Agentic Predictive Maintenance"
+  version: "1.0.0"
+  random_seed: 42
+  environment: "development"
+
+paths:
+  raw_nasa_dir: "data/raw/nasa_cmapss"
+  raw_ai4i_dir: "data/raw/ai4i"
+  processed_nasa_dir: "data/processed/nasa"
+  processed_ai4i_dir: "data/processed/ai4i"
+  models_preprocessing_dir: "models/preprocessing"
+  figures_dir: "reports/figures"
+  reports_dir: "reports"
+
+downloads:
+  nasa_url: "https://phm-datasets.s3.amazonaws.com/NASA/6.+Turbofan+Engine+Degradation+Simulation+Data+Set.zip"
+  ai4i_url: "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+
+nasa:
+  subsets: ["FD001", "FD002", "FD003", "FD004"]
+  benchmark_subset: "FD001"
+  columns:
+    index_columns: ["unit_id", "cycle"]
+    setting_columns: ["setting_1", "setting_2", "setting_3"]
+    sensor_columns:
+      - "sensor_1"
+      - "sensor_2"
+      - "sensor_3"
+      - "sensor_4"
+      - "sensor_5"
+      - "sensor_6"
+      - "sensor_7"
+      - "sensor_8"
+      - "sensor_9"
+      - "sensor_10"
+      - "sensor_11"
+      - "sensor_12"
+      - "sensor_13"
+      - "sensor_14"
+      - "sensor_15"
+      - "sensor_16"
+      - "sensor_17"
+      - "sensor_18"
+      - "sensor_19"
+      - "sensor_20"
+      - "sensor_21"
+  
+  feature_engineering:
+    rolling_windows: [5, 10, 20]
+    statistics: ["mean", "std"]
+    difference_lags: [1]
+    include_baseline_deviation: true
+    min_periods: 1  # Backward-looking window handling for initial cycles
+
+  early_warning:
+    horizons: [10, 20, 30]
+
+  sequence_generation:
+    window_lengths: [30, 50, 60]
+    default_window_length: 30
+    stride: 1
+
+  splitting:
+    train_val_ratio: 0.80  # 80% train engines, 20% validation engines
+    stratify_by_trajectory_length: false
+    random_seed: 42
+
+  scaling:
+    method: "minmax"  # or standard
+    feature_range: [-1, 1]
+
+ai4i:
+  raw_file: "ai4i2020.csv"
+  target_column: "Machine failure"
+  failure_modes: ["TWF", "HDF", "PWF", "OSF", "RNF"]
+  id_columns: ["UDI", "Product ID"]
+  categorical_features: ["Type"]
+  numerical_features:
+    - "Air temperature [K]"
+    - "Process temperature [K]"
+    - "Rotational speed [rpm]"
+    - "Torque [Nm]"
+    - "Tool wear [min]"
+  
+  splitting:
+    test_size: 0.20
+    random_seed: 42
+    stratify: true
+
+  scaling:
+    method: "standard"  # or minmax

@@ -1,0 +1,29 @@
+{
+    "phase": 4,
+    "title": "Multivariate Sensor Anomaly Detection",
+    "timestamp": "2026-11-05T11:51:37Z",
+    "models_trained": {
+        "FD001": [
+            "lstm_autoencoder",
+            "isolation_forest",
+            "one_class_svm",
+            "lof"
+        ],
+        "AI4I": [
+            "dense_autoencoder",
+            "isolation_forest",
+            "one_class_svm",
+            "lof"
+        ]
+    },
+    "feature_dimensions": {
+        "FD001": 153,
+        "AI4I": 14
+    },
+    "severity_tiers": [
+        "Normal",
+        "Low anomaly",
+        "Medium anomaly",
+        "High anomaly"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+  "model_name": "Gradient Boosting Classifier",
+  "dataset": "UCI AI4I 2020",
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index",
+    "Type_L",
+    "Type_M"
+  ],
+  "optimal_threshold": 0.8487996632264496,
+  "training_duration_seconds": 1.813,
+  "val_metrics": {
+    "val_threshold": 0.8488,
+    "val_accuracy": 0.9906,
+    "val_precision": 0.9535,
+    "val_recall": 0.7593,
+    "val_f1": 0.8454,
+    "val_pr_auc": 0.8774,
+    "val_roc_auc": 0.9855,
+    "val_confusion_matrix": [
+      [
+        1544,
+        2
+      ],
+      [
+        13,
+        41
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.8488,
+    "test_accuracy": 0.992,
+    "test_precision": 0.9815,
+    "test_recall": 0.7794,
+    "test_f1": 0.8689,
+    "test_pr_auc": 0.8374,
+    "test_roc_auc": 0.9646,
+    "test_confusion_matrix": [
+      [
+        1931,
+        1
+      ],
+      [
+        15,
+        53
+      ]
+    ]
+  }
+}

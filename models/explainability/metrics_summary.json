@@ -1,0 +1,235 @@
+{
+    "nasa_rul_shap": {
+        "top_features": [
+            {
+                "feature": "sensor_11_baseline_dev",
+                "mean_abs_shap": 9.010443,
+                "rank": 1
+            },
+            {
+                "feature": "sensor_4_roll_mean_10",
+                "mean_abs_shap": 7.540618,
+                "rank": 2
+            },
+            {
+                "feature": "sensor_4_roll_mean_5",
+                "mean_abs_shap": 5.821367,
+                "rank": 3
+            },
+            {
+                "feature": "sensor_13_baseline_dev",
+                "mean_abs_shap": 5.773708,
+                "rank": 4
+            },
+            {
+                "feature": "sensor_12_baseline_dev",
+                "mean_abs_shap": 5.451527,
+                "rank": 5
+            },
+            {
+                "feature": "sensor_8_baseline_dev",
+                "mean_abs_shap": 4.336881,
+                "rank": 6
+            },
+            {
+                "feature": "sensor_9_baseline_dev",
+                "mean_abs_shap": 4.235745,
+                "rank": 7
+            },
+            {
+                "feature": "sensor_4_baseline_dev",
+                "mean_abs_shap": 4.204278,
+                "rank": 8
+            },
+            {
+                "feature": "sensor_15_baseline_dev",
+                "mean_abs_shap": 3.940402,
+                "rank": 9
+            },
+            {
+                "feature": "sensor_14_baseline_dev",
+                "mean_abs_shap": 3.497576,
+                "rank": 10
+            },
+            {
+                "feature": "sensor_20_baseline_dev",
+                "mean_abs_shap": 2.849229,
+                "rank": 11
+            },
+            {
+                "feature": "sensor_21_baseline_dev",
+                "mean_abs_shap": 2.618238,
+                "rank": 12
+            },
+            {
+                "feature": "sensor_7_baseline_dev",
+                "mean_abs_shap": 2.547025,
+                "rank": 13
+            },
+            {
+                "feature": "sensor_21_roll_mean_10",
+                "mean_abs_shap": 2.25661,
+                "rank": 14
+            },
+            {
+                "feature": "sensor_15_roll_mean_10",
+                "mean_abs_shap": 2.123379,
+                "rank": 15
+            }
+        ]
+    },
+    "ai4i_shap": {
+        "top_features": [
+            {
+                "feature": "Mechanical power [W]",
+                "mean_abs_shap": 0.914276,
+                "rank": 1
+            },
+            {
+                "feature": "Tool wear [min]",
+                "mean_abs_shap": 0.881663,
+                "rank": 2
+            },
+            {
+                "feature": "Rotational speed [rpm]",
+                "mean_abs_shap": 0.723444,
+                "rank": 3
+            },
+            {
+                "feature": "Overstrain indicator [Nm*min]",
+                "mean_abs_shap": 0.562924,
+                "rank": 4
+            },
+            {
+                "feature": "Torque to speed ratio",
+                "mean_abs_shap": 0.48256,
+                "rank": 5
+            },
+            {
+                "feature": "Heat dissipation index",
+                "mean_abs_shap": 0.419217,
+                "rank": 6
+            },
+            {
+                "feature": "Temp ratio",
+                "mean_abs_shap": 0.336036,
+                "rank": 7
+            },
+            {
+                "feature": "Torque [Nm]",
+                "mean_abs_shap": 0.318139,
+                "rank": 8
+            },
+            {
+                "feature": "Temp difference [K]",
+                "mean_abs_shap": 0.283544,
+                "rank": 9
+            },
+            {
+                "feature": "Power wear index",
+                "mean_abs_shap": 0.253024,
+                "rank": 10
+            },
+            {
+                "feature": "Air temperature [K]",
+                "mean_abs_shap": 0.221352,
+                "rank": 11
+            },
+            {
+                "feature": "Process temperature [K]",
+                "mean_abs_shap": 0.161308,
+                "rank": 12
+            },
+            {
+                "feature": "Type_L",
+                "mean_abs_shap": 0.092306,
+                "rank": 13
+            },
+            {
+                "feature": "Type_M",
+                "mean_abs_shap": 0.022252,
+                "rank": 14
+            }
+        ]
+    },
+    "permutation_comparison": {
+        "nasa": {
+            "spearman_rank_correlation": 0.8256,
+            "p_value": 7e-06,
+            "top_k_evaluated": 15,
+            "concordant_top_features": [
+                "sensor_8_baseline_dev",
+                "sensor_4_baseline_dev",
+                "sensor_20_baseline_dev",
+                "sensor_4_roll_mean_5",
+                "sensor_12_baseline_dev",
+                "sensor_21_baseline_dev",
+                "sensor_7_baseline_dev",
+                "sensor_14_baseline_dev",
+                "sensor_13_baseline_dev",
+                "sensor_9_baseline_dev",
+                "sensor_4_roll_mean_10",
+                "sensor_11_baseline_dev"
+            ],
+            "concordance_jaccard_index": 0.6667
+        },
+        "ai4i": {
+            "spearman_rank_correlation": 0.5516,
+            "p_value": 0.040849,
+            "top_k_evaluated": 14,
+            "concordant_top_features": [
+                "Torque to speed ratio",
+                "Rotational speed [rpm]",
+                "Torque [Nm]",
+                "Power wear index",
+                "Process temperature [K]",
+                "Heat dissipation index",
+                "Tool wear [min]",
+                "Mechanical power [W]",
+                "Temp difference [K]",
+                "Air temperature [K]",
+                "Overstrain indicator [Nm*min]",
+                "Type_L",
+                "Temp ratio",
+                "Type_M"
+            ],
+            "concordance_jaccard_index": 1.0
+        }
+    },
+    "deep_learning_temporal": {
+        "time_step_weights": [
+            0.0028,
+            0.004,
+            0.0056,
+            0.0066,
+            0.0072,
+            0.0079,
+            0.0087,
+            0.0096,
+            0.0105,
+            0.0114,
+            0.0123,
+            0.0133,
+            0.0143,
+            0.0154,
+            0.0164,
+            0.0172,
+            0.0181,
+            0.0188,
+            0.0193,
+            0.0196,
+            0.02,
+            0.0213,
+            0.0248,
+            0.0323,
+            0.0448,
+            0.0627,
+            0.0862,
+            0.1151,
+            0.1537,
+            0.2
+        ],
+        "recency_ratio": 10.22
+    },
+    "execution_time_seconds": 36.41
+}

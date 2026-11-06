@@ -1,0 +1,254 @@
+{
+    "nasa_permutation": [
+        {
+            "feature": "sensor_11_baseline_dev",
+            "importance_mean": 0.061148,
+            "importance_std": 0.004932,
+            "rank": 1
+        },
+        {
+            "feature": "sensor_13_baseline_dev",
+            "importance_mean": 0.046232,
+            "importance_std": 0.009349,
+            "rank": 2
+        },
+        {
+            "feature": "sensor_4_roll_mean_10",
+            "importance_mean": 0.026126,
+            "importance_std": 0.005126,
+            "rank": 3
+        },
+        {
+            "feature": "sensor_9_baseline_dev",
+            "importance_mean": 0.025403,
+            "importance_std": 0.007531,
+            "rank": 4
+        },
+        {
+            "feature": "sensor_14_baseline_dev",
+            "importance_mean": 0.020803,
+            "importance_std": 0.002127,
+            "rank": 5
+        },
+        {
+            "feature": "sensor_4_baseline_dev",
+            "importance_mean": 0.019122,
+            "importance_std": 0.001584,
+            "rank": 6
+        },
+        {
+            "feature": "sensor_12_baseline_dev",
+            "importance_mean": 0.017706,
+            "importance_std": 0.00366,
+            "rank": 7
+        },
+        {
+            "feature": "sensor_20_baseline_dev",
+            "importance_mean": 0.014369,
+            "importance_std": 0.004372,
+            "rank": 8
+        },
+        {
+            "feature": "sensor_8_baseline_dev",
+            "importance_mean": 0.012358,
+            "importance_std": 0.005066,
+            "rank": 9
+        },
+        {
+            "feature": "sensor_4_roll_mean_5",
+            "importance_mean": 0.0118,
+            "importance_std": 0.003603,
+            "rank": 10
+        },
+        {
+            "feature": "sensor_21_baseline_dev",
+            "importance_mean": 0.009013,
+            "importance_std": 0.001629,
+            "rank": 11
+        },
+        {
+            "feature": "sensor_13_roll_mean_20",
+            "importance_mean": 0.008695,
+            "importance_std": 0.002284,
+            "rank": 12
+        },
+        {
+            "feature": "sensor_14_roll_mean_20",
+            "importance_mean": 0.007925,
+            "importance_std": 0.004491,
+            "rank": 13
+        },
+        {
+            "feature": "sensor_7_baseline_dev",
+            "importance_mean": 0.006132,
+            "importance_std": 0.002457,
+            "rank": 14
+        },
+        {
+            "feature": "sensor_14_roll_std_20",
+            "importance_mean": 0.005114,
+            "importance_std": 0.002813,
+            "rank": 15
+        },
+        {
+            "feature": "setting_2_baseline_dev",
+            "importance_mean": 0.005014,
+            "importance_std": 0.002663,
+            "rank": 16
+        },
+        {
+            "feature": "sensor_13",
+            "importance_mean": 0.004284,
+            "importance_std": 0.001513,
+            "rank": 17
+        },
+        {
+            "feature": "sensor_7_roll_mean_20",
+            "importance_mean": 0.003727,
+            "importance_std": 0.001801,
+            "rank": 18
+        },
+        {
+            "feature": "sensor_21_roll_mean_10",
+            "importance_mean": 0.00345,
+            "importance_std": 0.003652,
+            "rank": 19
+        },
+        {
+            "feature": "sensor_6_roll_std_20",
+            "importance_mean": 0.002889,
+            "importance_std": 0.001053,
+            "rank": 20
+        }
+    ],
+    "ai4i_permutation": [
+        {
+            "feature": "Mechanical power [W]",
+            "importance_mean": 0.031028,
+            "importance_std": 0.00787,
+            "rank": 1
+        },
+        {
+            "feature": "Tool wear [min]",
+            "importance_mean": 0.02786,
+            "importance_std": 0.005531,
+            "rank": 2
+        },
+        {
+            "feature": "Overstrain indicator [Nm*min]",
+            "importance_mean": 0.016888,
+            "importance_std": 0.00328,
+            "rank": 3
+        },
+        {
+            "feature": "Rotational speed [rpm]",
+            "importance_mean": 0.012864,
+            "importance_std": 0.00385,
+            "rank": 4
+        },
+        {
+            "feature": "Type_L",
+            "importance_mean": 0.003151,
+            "importance_std": 0.00171,
+            "rank": 5
+        },
+        {
+            "feature": "Power wear index",
+            "importance_mean": 0.002586,
+            "importance_std": 0.003541,
+            "rank": 6
+        },
+        {
+            "feature": "Heat dissipation index",
+            "importance_mean": 0.001745,
+            "importance_std": 0.003292,
+            "rank": 7
+        },
+        {
+            "feature": "Process temperature [K]",
+            "importance_mean": 0.001713,
+            "importance_std": 0.000725,
+            "rank": 8
+        },
+        {
+            "feature": "Temp ratio",
+            "importance_mean": 0.001503,
+            "importance_std": 0.003047,
+            "rank": 9
+        },
+        {
+            "feature": "Type_M",
+            "importance_mean": 0.000679,
+            "importance_std": 0.000345,
+            "rank": 10
+        },
+        {
+            "feature": "Torque to speed ratio",
+            "importance_mean": 0.000533,
+            "importance_std": 0.00162,
+            "rank": 11
+        },
+        {
+            "feature": "Temp difference [K]",
+            "importance_mean": -0.00063,
+            "importance_std": 0.002907,
+            "rank": 12
+        },
+        {
+            "feature": "Air temperature [K]",
+            "importance_mean": -0.002569,
+            "importance_std": 0.003129,
+            "rank": 13
+        },
+        {
+            "feature": "Torque [Nm]",
+            "importance_mean": -0.006189,
+            "importance_std": 0.002542,
+            "rank": 14
+        }
+    ],
+    "concordance_metrics": {
+        "nasa": {
+            "spearman_rank_correlation": 0.8256,
+            "p_value": 7e-06,
+            "top_k_evaluated": 15,
+            "concordant_top_features": [
+                "sensor_8_baseline_dev",
+                "sensor_4_baseline_dev",
+                "sensor_20_baseline_dev",
+                "sensor_4_roll_mean_5",
+                "sensor_12_baseline_dev",
+                "sensor_21_baseline_dev",
+                "sensor_7_baseline_dev",
+                "sensor_14_baseline_dev",
+                "sensor_13_baseline_dev",
+                "sensor_9_baseline_dev",
+                "sensor_4_roll_mean_10",
+                "sensor_11_baseline_dev"
+            ],
+            "concordance_jaccard_index": 0.6667
+        },
+        "ai4i": {
+            "spearman_rank_correlation": 0.5516,
+            "p_value": 0.040849,
+            "top_k_evaluated": 14,
+            "concordant_top_features": [
+                "Torque to speed ratio",
+                "Rotational speed [rpm]",
+                "Torque [Nm]",
+                "Power wear index",
+                "Process temperature [K]",
+                "Heat dissipation index",
+                "Tool wear [min]",
+                "Mechanical power [W]",
+                "Temp difference [K]",
+                "Air temperature [K]",
+                "Overstrain indicator [Nm*min]",
+                "Type_L",
+                "Temp ratio",
+                "Type_M"
+            ],
+            "concordance_jaccard_index": 1.0
+        }
+    }
+}

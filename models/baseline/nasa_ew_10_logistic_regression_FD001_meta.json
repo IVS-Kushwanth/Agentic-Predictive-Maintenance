@@ -1,0 +1,46 @@
+{
+  "model_name": "Logistic Regression",
+  "subset": "FD001",
+  "horizon": 10,
+  "target": "early_warning_10",
+  "optimal_threshold": 0.9681435823440552,
+  "training_duration_seconds": 0.074,
+  "val_metrics": {
+    "val_threshold": 0.9681,
+    "val_accuracy": 0.9909,
+    "val_precision": 0.9458,
+    "val_recall": 0.8727,
+    "val_f1": 0.9078,
+    "val_pr_auc": 0.9727,
+    "val_roc_auc": 0.9983,
+    "val_confusion_matrix": [
+      [
+        4060,
+        11
+      ],
+      [
+        28,
+        192
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.9681,
+    "test_accuracy": 0.9992,
+    "test_precision": 0.75,
+    "test_recall": 0.5294,
+    "test_f1": 0.6207,
+    "test_pr_auc": 0.8036,
+    "test_roc_auc": 0.9997,
+    "test_confusion_matrix": [
+      [
+        13076,
+        3
+      ],
+      [
+        8,
+        9
+      ]
+    ]
+  }
+}

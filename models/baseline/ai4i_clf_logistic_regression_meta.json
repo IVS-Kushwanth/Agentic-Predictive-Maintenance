@@ -1,0 +1,60 @@
+{
+  "model_name": "Logistic Regression",
+  "dataset": "UCI AI4I 2020",
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index",
+    "Type_L",
+    "Type_M"
+  ],
+  "optimal_threshold": 0.9372355937957764,
+  "training_duration_seconds": 0.033,
+  "val_metrics": {
+    "val_threshold": 0.9372,
+    "val_accuracy": 0.9656,
+    "val_precision": 0.4912,
+    "val_recall": 0.5185,
+    "val_f1": 0.5045,
+    "val_pr_auc": 0.4894,
+    "val_roc_auc": 0.9278,
+    "val_confusion_matrix": [
+      [
+        1517,
+        29
+      ],
+      [
+        26,
+        28
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.9372,
+    "test_accuracy": 0.9695,
+    "test_precision": 0.5686,
+    "test_recall": 0.4265,
+    "test_f1": 0.4874,
+    "test_pr_auc": 0.466,
+    "test_roc_auc": 0.9403,
+    "test_confusion_matrix": [
+      [
+        1910,
+        22
+      ],
+      [
+        39,
+        29
+      ]
+    ]
+  }
+}

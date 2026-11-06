@@ -1,0 +1,130 @@
+{
+    "nasa_c_mapss": {
+        "nominal_mean_score": 0.028887,
+        "moderate_mean_score": 0.030439,
+        "severe_mean_score": 0.075197,
+        "correlation_with_degradation": {
+            "lstm_autoencoder": 0.4865,
+            "isolation_forest": 0.73,
+            "one_class_svm": 0.6105,
+            "lof": 0.6201
+        }
+    },
+    "ai4i_2020": {
+        "isolation_forest": {
+            "threshold": -7.316924708266823e-17,
+            "precision": 0.3333,
+            "recall": 0.2647,
+            "f1_score": 0.2951,
+            "pr_auc": 0.3079,
+            "roc_auc": 0.8824,
+            "confusion_matrix": {
+                "tn": 1896,
+                "fp": 36,
+                "fn": 50,
+                "tp": 18
+            },
+            "total_samples": 2000,
+            "true_positives_rate": 0.2647,
+            "false_positive_rate": 0.0186
+        },
+        "one_class_svm": {
+            "threshold": 6.866599849170907e-05,
+            "precision": 0.2571,
+            "recall": 0.2647,
+            "f1_score": 0.2609,
+            "pr_auc": 0.2504,
+            "roc_auc": 0.823,
+            "confusion_matrix": {
+                "tn": 1880,
+                "fp": 52,
+                "fn": 50,
+                "tp": 18
+            },
+            "total_samples": 2000,
+            "true_positives_rate": 0.2647,
+            "false_positive_rate": 0.0269
+        },
+        "lof": {
+            "threshold": 1.1804750333911005,
+            "precision": 0.2024,
+            "recall": 0.25,
+            "f1_score": 0.2237,
+            "pr_auc": 0.1647,
+            "roc_auc": 0.7839,
+            "confusion_matrix": {
+                "tn": 1865,
+                "fp": 67,
+                "fn": 51,
+                "tp": 17
+            },
+            "total_samples": 2000,
+            "true_positives_rate": 0.25,
+            "false_positive_rate": 0.0347
+        },
+        "dense_autoencoder": {
+            "threshold": 0.01331312372117546,
+            "precision": 0.1176,
+            "recall": 0.1176,
+            "f1_score": 0.1176,
+            "pr_auc": 0.1343,
+            "roc_auc": 0.6535,
+            "confusion_matrix": {
+                "tn": 1872,
+                "fp": 60,
+                "fn": 60,
+                "tp": 8
+            },
+            "total_samples": 2000,
+            "true_positives_rate": 0.1176,
+            "false_positive_rate": 0.0311
+        }
+    },
+    "thresholds": {
+        "FD001": {
+            "lstm_autoencoder": {
+                "low": 0.037033069878816605,
+                "medium": 0.040155064314603806,
+                "high": 0.04147423803806305
+            },
+            "isolation_forest": {
+                "low": -0.001284861806075288,
+                "medium": 0.017603640325935754,
+                "high": 0.02975892743960286
+            },
+            "one_class_svm": {
+                "low": 0.3423602497406648,
+                "medium": 4.02331913223486,
+                "high": 6.078380917636006
+            },
+            "lof": {
+                "low": 1.5642067193984985,
+                "medium": 1.7165606021881104,
+                "high": 1.7642289400100708
+            }
+        },
+        "AI4I": {
+            "isolation_forest": {
+                "low": -0.03530592560532763,
+                "medium": -7.316924708266823e-17,
+                "high": 0.04148192729740711
+            },
+            "one_class_svm": {
+                "low": -1.4312403797357727,
+                "medium": 6.866599849170907e-05,
+                "high": 1.6945813473556486
+            },
+            "lof": {
+                "low": 1.1185420886942263,
+                "medium": 1.1804750333911005,
+                "high": 1.2611959492210019
+            },
+            "dense_autoencoder": {
+                "low": 0.008531887118041351,
+                "medium": 0.01331312372117546,
+                "high": 0.018504056820479706
+            }
+        }
+    },
+    "execution_time_seconds": 52.27
+}

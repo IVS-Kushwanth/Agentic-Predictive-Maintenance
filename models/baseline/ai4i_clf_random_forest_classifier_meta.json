@@ -1,0 +1,60 @@
+{
+  "model_name": "Random Forest Classifier",
+  "dataset": "UCI AI4I 2020",
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Mechanical power [W]",
+    "Temp difference [K]",
+    "Temp ratio",
+    "Torque to speed ratio",
+    "Overstrain indicator [Nm*min]",
+    "Heat dissipation index",
+    "Power wear index",
+    "Type_L",
+    "Type_M"
+  ],
+  "optimal_threshold": 0.5877472625413801,
+  "training_duration_seconds": 0.242,
+  "val_metrics": {
+    "val_threshold": 0.5877,
+    "val_accuracy": 0.9888,
+    "val_precision": 0.8913,
+    "val_recall": 0.7593,
+    "val_f1": 0.82,
+    "val_pr_auc": 0.8496,
+    "val_roc_auc": 0.9771,
+    "val_confusion_matrix": [
+      [
+        1541,
+        5
+      ],
+      [
+        13,
+        41
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.5877,
+    "test_accuracy": 0.9895,
+    "test_precision": 0.8615,
+    "test_recall": 0.8235,
+    "test_f1": 0.8421,
+    "test_pr_auc": 0.8491,
+    "test_roc_auc": 0.9745,
+    "test_confusion_matrix": [
+      [
+        1923,
+        9
+      ],
+      [
+        12,
+        56
+      ]
+    ]
+  }
+}

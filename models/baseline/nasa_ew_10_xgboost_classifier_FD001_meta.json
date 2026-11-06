@@ -1,0 +1,46 @@
+{
+  "model_name": "XGBoost Classifier",
+  "subset": "FD001",
+  "horizon": 10,
+  "target": "early_warning_10",
+  "optimal_threshold": 0.8814518451690674,
+  "training_duration_seconds": 0.926,
+  "val_metrics": {
+    "val_threshold": 0.8815,
+    "val_accuracy": 0.9851,
+    "val_precision": 0.8171,
+    "val_recall": 0.9136,
+    "val_f1": 0.8627,
+    "val_pr_auc": 0.9417,
+    "val_roc_auc": 0.9967,
+    "val_confusion_matrix": [
+      [
+        4026,
+        45
+      ],
+      [
+        19,
+        201
+      ]
+    ]
+  },
+  "test_metrics": {
+    "test_threshold": 0.8815,
+    "test_accuracy": 0.9992,
+    "test_precision": 0.6364,
+    "test_recall": 0.8235,
+    "test_f1": 0.7179,
+    "test_pr_auc": 0.822,
+    "test_roc_auc": 0.9997,
+    "test_confusion_matrix": [
+      [
+        13071,
+        8
+      ],
+      [
+        3,
+        14
+      ]
+    ]
+  }
+}
